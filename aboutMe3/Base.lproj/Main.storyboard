@@ -1,24 +1,123 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="NrW-sx-Wjp">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--photo-->
+        <scene sceneID="SFO-yo-5fW">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <viewController id="FLt-c4-6ud" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zBH-Cb-Efb">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="FYc-Ea-HRZ">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="769"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cats" translatesAutoresizingMaskIntoConstraints="NO" id="4v8-qE-ChX">
+                                        <rect key="frame" x="8" y="67" width="377" height="374"/>
+                                        <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Zhaksybek" translatesAutoresizingMaskIntoConstraints="NO" id="pZm-K0-2QQ">
+                                        <rect key="frame" x="8" y="461" width="377" height="300"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="300" id="1CC-Yh-LXG"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="udK-If-5HE"/>
+                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                        <constraints>
+                            <constraint firstItem="FYc-Ea-HRZ" firstAttribute="leading" secondItem="udK-If-5HE" secondAttribute="leading" id="6Bi-Z8-9Hn"/>
+                            <constraint firstItem="udK-If-5HE" firstAttribute="bottom" secondItem="FYc-Ea-HRZ" secondAttribute="bottom" id="I72-fL-7SJ"/>
+                            <constraint firstItem="FYc-Ea-HRZ" firstAttribute="top" secondItem="zBH-Cb-Efb" secondAttribute="top" id="kOA-O2-h0E"/>
+                            <constraint firstItem="udK-If-5HE" firstAttribute="trailing" secondItem="FYc-Ea-HRZ" secondAttribute="trailing" id="rVM-Rp-EA5"/>
+                        </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="photo" image="photo" catalog="system" selectedImage="photo" id="81T-N4-8dL"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="r10-Kn-VfK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="953" y="415"/>
+        </scene>
+        <!--about cats-->
+        <scene sceneID="eOs-nz-acE">
+            <objects>
+                <viewController id="CWy-e6-wQn" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sw3-ob-ex9">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="lOH-X1-aaA">
+                                <rect key="frame" x="0.0" y="59" width="393" height="710"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DoB-Z7-kRA">
+                                        <rect key="frame" x="2" y="8" width="383" height="694"/>
+                                        <string key="text">О моих кошках. Старшую звоут Чарли, младшую Бу. Бушку мы подобрали когда ей не было месяца. Чарли родила мамина кошка Персичуля. Чарли уже три года . Бушке два. С нами жил Жаксыбек. Вломился в нашу жизнь в ноябре прошлого года.</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <edgeInsets key="layoutMargins" top="8" left="2" bottom="8" right="8"/>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="7zn-QP-sw1"/>
+                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                        <color key="tintColor" systemColor="systemIndigoColor"/>
+                        <constraints>
+                            <constraint firstItem="lOH-X1-aaA" firstAttribute="leading" secondItem="7zn-QP-sw1" secondAttribute="leading" id="JR7-tw-2rI"/>
+                            <constraint firstAttribute="trailing" secondItem="lOH-X1-aaA" secondAttribute="trailing" id="Q7K-ag-OYU"/>
+                            <constraint firstItem="7zn-QP-sw1" firstAttribute="bottom" secondItem="lOH-X1-aaA" secondAttribute="bottom" id="Y2e-cj-nsV"/>
+                            <constraint firstItem="lOH-X1-aaA" firstAttribute="top" secondItem="7zn-QP-sw1" secondAttribute="top" id="fvC-UG-REL"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="about cats" image="info" catalog="system" selectedImage="info" id="OaO-g3-qTd"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nQK-s7-a02" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="953.43511450381675" y="-353.52112676056339"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="dgj-bY-fuq">
+            <objects>
+                <tabBarController id="NrW-sx-Wjp" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="RqY-bX-Csn">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="CWy-e6-wQn" kind="relationship" relationship="viewControllers" id="X03-Zc-GVJ"/>
+                        <segue destination="FLt-c4-6ud" kind="relationship" relationship="viewControllers" id="AuR-Ze-itM"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ajN-NB-jSE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="47" y="-50"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Zhaksybek" width="376" height="501.33334350585938"/>
+        <image name="cats" width="501.33334350585938" height="501.33334350585938"/>
+        <image name="info" catalog="system" width="93" height="128"/>
+        <image name="photo" catalog="system" width="128" height="93"/>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>
